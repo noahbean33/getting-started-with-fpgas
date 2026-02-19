@@ -6,7 +6,7 @@ module LFSR_TB ();
   
   reg r_Clk = 1'b0;
   
-  wire [c_NUM_BITS-1:0] w_LFSR_Data;
+  wire [NUM_BITS-1:0] w_LFSR_Data;
   wire w_LFSR_Done;
   
   LFSR #(.NUM_BITS(NUM_BITS)) LFSR_inst

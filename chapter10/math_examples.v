@@ -2,14 +2,14 @@
 
 module Math_Examples();
 
-  reg unsigned [3:0] i1_u4, i2_u4, o_u4;
+  reg [3:0] i1_u4, i2_u4, o_u4;
   reg signed   [3:0] i1_s4, i2_s4, o_s4;
   
-  reg unsigned [4:0] o_u5, i2_u5;
+  reg [4:0] o_u5, i2_u5;
   reg signed   [4:0] o_s5, i1_s5, i2_s5;
-  reg unsigned [5:0] o_u6;
+  reg [5:0] o_u6;
   
-  reg unsigned [7:0] o_u8, i_u8;
+  reg [7:0] o_u8, i_u8;
   reg signed   [7:0] o_s8;
    
   initial begin 

@@ -19,7 +19,7 @@ module Debounce_Filter #(parameter DEBOUNCE_LIMIT = 20) (
   begin
     // Bouncy input is different than internal state value, so an input is
     // changing.  Increase the counter until it is stable for enough time.  
-    if (i_Bouncy !== r_State && r_Count < DEBOUNCE_LIMIT-1)
+    if (i_Bouncy != r_State && r_Count < DEBOUNCE_LIMIT-1)
     begin
       r_Count <= r_Count + 1;
     end

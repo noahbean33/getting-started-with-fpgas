@@ -8,7 +8,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity Demux_LFSR_Project_Top is 
+entity Demux_Count_Project_Top is 
   port (
     i_Clk      : in  std_logic;
     i_Switch_1 : in  std_logic;
@@ -17,9 +17,9 @@ entity Demux_LFSR_Project_Top is
     o_LED_2    : out std_logic;
     o_LED_3    : out std_logic;
     o_LED_4    : out std_logic);
-end entity Demux_LFSR_Project_Top;   
+end entity Demux_Count_Project_Top;   
 
-architecture RTL of Demux_LFSR_Project_Top is
+architecture RTL of Demux_Count_Project_Top is
     
   -- Equivalent to 2^22 - 1, which is what the LFSR counted up to
   constant COUNT_LIMIT : integer := 4194303;
